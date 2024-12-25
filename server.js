@@ -8,7 +8,7 @@ var port = process.env.PORT || 8080;
 // immediate abuse (e.g. denial of service). If you want to block all origins except for some,
 // use originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
-var originWhitelist = ['http://localhost:8100', 'http://localhost:8101', 'capacitor://localhost', 'http://localhost', 'http://10.0.0.21:8100', 'http://10.0.0.21:8101'];
+var originWhitelist = ['http://localhost:8100', 'http://localhost:8101', 'capacitor://localhost', 'http://localhost', 'http://10.0.0.21:8100', 'http://10.0.0.21:8101', 'http://10.0.0.179:8100'];
 // var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
 function parseEnvList(env) {
   if (!env) {
